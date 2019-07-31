@@ -55,8 +55,8 @@ export default {
     },
     elementClick(index) {
       if (this.indexes.length < 2) {
-        this.clickedNumber++;
         if (!this.elements[index].clicked) {
+          this.clickedNumber++;
           this.elements[index].clicked = !this.elements[index].clicked;
           this.indexes.push(index);
         }
@@ -83,7 +83,7 @@ export default {
       }
     },
     playAgain() {
-      router.push("home");
+      window.location.href = '/vue_game';
     },
   },
 };
