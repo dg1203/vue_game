@@ -83,7 +83,7 @@ export default {
       }
     },
     playAgain() {
-      location.reload();
+      router.push("home");
     },
   },
 };
